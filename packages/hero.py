@@ -69,8 +69,8 @@ class Hero:
 
     def upLvl(self):
         self.lvl += 1
-        self.life += 0.5 * self.lvl
-        self.mana += 0.3 * self.lvl
+        self.life += 10
+        self.mana += 5
         print(self.name, 'went up one level')
         print('Your level is now', self.lvl )
         print('Your life is now {:.1f}'.format(self.life))
@@ -80,8 +80,8 @@ class Hero:
     def downLvl(self):
         if self.lvl > 1:
             self.lvl -= 1
-            self.life -= 0.5 * self.lvl
-            self.mana -= 0.3 * self.lvl
+            self.life -= 10
+            self.mana -= 5
             print(self.name, 'loss one level')
             print('Your level is now', self.lvl )
             print('Your life is now {:.1f}'.format(self.life))
